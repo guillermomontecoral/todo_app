@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/todo_background_card"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etTituloTarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/white"
+        android:hint="@string/agregar_titulo"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="16sp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etDescripcionTarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/white"
+        android:hint="@string/agregar_breve_descripcion"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="16sp" />
+
+    <RadioGroup
+        android:id="@+id/rgCategorias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbNegocios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:buttonTint="@color/todo_business_category"
+            android:checked="true"
+            android:text="@string/todo_negocios"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbPersonal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:buttonTint="@color/todo_personal_category"
+            android:text="@string/todo_personal"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/rbOtros"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:buttonTint="@color/todo_other_category"
+            android:textColor="@color/white"
+            android:text="@string/todo_otros" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnAgregarTarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/todo_agregar_tarea"
+        android:backgroundTint="@color/todo_accent"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

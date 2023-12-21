@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/todo_background_app"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/todo_app"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etNombreUsuario"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:paddingVertical="16dp"
+        android:layout_marginTop="32dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/white"
+        android:hint="Ingresa tu nombre"
+        android:textColorHint="@color/white"
+        >
+    </androidx.appcompat.widget.AppCompatEditText>
+
+    <Button
+        android:id="@+id/btnContinuar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:padding="16dp"
+        android:text="@string/btn_continuar"
+        android:textAllCaps="false"
+        android:textSize="28sp"
+        android:backgroundTint="@color/todo_accent">
+
+    </Button>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

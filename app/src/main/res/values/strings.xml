@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">TODOapp</string>
+    <string name="todo_app">TODO app</string>
+    <string name="btn_continuar">Continuar</string>
+    <string name="bienvenido">Bienvenido, </string>
+    <string name="categorias">Categorías</string>
+    <string name="tareas">Tareas</string>
+    <string name="agregar_titulo">Agregar título</string>
+    <string name="agregar_breve_descripcion">Agregar breve descripción</string>
+    <string name="todo_negocios">Negocios</string>
+    <string name="todo_personal">Personal</string>
+    <string name="todo_otros">Otros</string>
+    <string name="todo_agregar_tarea">Agregar tarea</string>
+</resources>
